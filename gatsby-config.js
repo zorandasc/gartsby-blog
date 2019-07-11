@@ -6,4 +6,16 @@
 
 module.exports = {
   /* Your site config here */
+  plugins: [
+    `gatsby-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `src/posts/`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+  ],
 }
