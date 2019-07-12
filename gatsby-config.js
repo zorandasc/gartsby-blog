@@ -7,7 +7,13 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    `gatsby-mdx`,
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [{ resolve: `gatsby-remark-images` }],
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
