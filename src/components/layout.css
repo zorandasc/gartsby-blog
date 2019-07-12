@@ -32,10 +32,12 @@ body {
   margin: 3rem 0;
   text-transform: capitalize;
 }
+.kurec span a span {
+  background-color: #3f3f3f;
+  padding-bottom: 0% !important;
+}
 
-.post-image span {
-  display: block;
+.kurec span {
   max-width: 100% !important;
   margin: 2rem;
-  max-height: 100% !important;
 }
